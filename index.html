@@ -78,39 +78,138 @@
 				</h4>
 			</section>
 			<section data-background="media/stock/cypress-tree.jpg">
-				<h2 class="fragment black-stroke">Cypress tree</h2>
+				<h2 class="fragment black-stroke">Cypress Tree</h2>
+				<aside class="notes" data-markdown>
+					- hehe
+				</aside>
+			</section>
+			<section data-background="media/stock/cyprus.jpg">
+
+				<h2 class="fragment black-stroke">Cyprus, Greece</h2>
 				<aside class="notes" data-markdown>
 					- hehe
 				</aside>
 			</section>
 
 			<section>
-					<iframe class="" style="width: 1200px; height: 650px;" src="https://www.cypress.io/"></iframe>
+				<iframe class="" style="width: 1200px; height: 650px;" src="https://www.cypress.io/"></iframe>
 			</section>
 
 			<section data-background="media/stock/adventureStart.jpeg">
 				<h2 class="fragment black-stroke">The journey to Cypress</h2>
 				<!--  TODO remove slide? -->
 				<ul>
-					<li class="fragment black-stroke-thin">Basic WebRTC (intro)</li>
-					<li class="fragment black-stroke-thin">Story and demo</li>
-					<li class="fragment black-stroke-thin">Connecting users</li>
-					<li class="fragment black-stroke-thin">The Data channel</li>
-					<li class="fragment black-stroke-thin">Browser support</li>
-					<li class="fragment black-stroke-thin">News</li>
-					<li class="fragment black-stroke-thin">Call to action</li>
+					<li class="fragment black-stroke-thin">Theory</li>
+					<li class="fragment black-stroke-thin">Pracsis</li>
 				</ul>
 				<aside class="notes" data-markdown>
 					- Outline
 				</aside>
 			</section>
+
+			<section>
+				<h2>Here are we?</h2>
+				<aside class="notes" data-markdown>
+					DRAW E2E domain
+				</aside>
+			</section>
+
 			<section>
 				<section>
 					<h2>In a nutshell, what is Cypress?</h2>
 					<ul>
-						<li class="fragment">Direct browser-to-browser communication API</li>
+						<li class="fragment">A high level test framework</li>
+						<li class="fragment">For writing automatic browser level tests</li>
+						<li class="fragment">For testing the entire stack</li>
+						<li class="fragment">A end to End test framework</li>
 					</ul>
 				</section>
+				<section>
+					<h3>End to End (E2E)</h3>
+					<aside class="notes" data-markdown>
+						- top to bottom
+						- (less) start to end
+						- high level testing
+					</aside>
+				</section>
+			</section>
+
+			<section>
+				<h3>Why is it lightyears ahead?</h3>
+				<ul>
+					<li class="fragment">Faster</li>
+					<li class="fragment">More stable</li>
+					<li class="fragment">Easier to whrite tests</li>
+					<li class="fragment">Easier to debug</li>
+					<li class="fragment">VIDEO RECODING!</li>
+					<li class="fragment">Cheap!</li>
+					<li class="fragment">Dashboard!</li>
+					<li class="fragment">Automaticly waits!</li>
+					<li class="fragment">Time travel!</li>
+					<li class="fragment">No selenium!</li>
+					<li class="fragment">Intercept and mock/stub requests!</li>
+					<li class="fragment">Native browser access!</li>
+					<li class="fragment">Fully sync!</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>Befefits of Nightwatch over Cypress</h3>
+				<ul>
+					<li class="fragment">More browsers</li>
+					<li class="fragment">More pain</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>It’s like comparing fireworks to the moon landing</h2>
+			</section>
+
+			<section>
+				<h2>Enought theory!</h2>
+				<p class="fragment">Let's write some tests!</p>
+			</section>
+
+			<section>
+				Cypress has paralalisation!
+			</section>
+
+			<section>
+				<h3>Permanent Drawbacks</h3>
+				<ul>
+					<li class="fragment">No multible tabs/windows</li>
+					<li class="fragment">Only same origin</li>
+					<li class="fragment">Only in JS</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>Temporaily Drawbacks</h3>
+				<ul>
+					<li class="fragment">Browser support</li>
+					<li class="fragment">Limited iframe support</li>
+					<li class="fragment">File uploads</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>You can test around the drawbacks</h2>
+			</section>
+
+			<section>
+				<h2>Cypress is yong</h2>
+				<aside class="notes" data-markdown>
+					- Less features and comunity support for now, but will improve
+				</aside>
+			</section>
+
+			<section>
+				<h2>Consider using Typescript</h2>
+			</section>
+
+			<section>
+				<h3>Stop your unhealthy dependency on selenium and webdriver</h3>
+				<h2 class="fragment">Join the Cypress revolution!</h2>
 			</section>
 
 			<section data-background="media/stock/adventureOver.jpeg">
@@ -125,64 +224,6 @@
 			</section>
 			<section>
 				This page is unintentionally left blank
-			</section>
-			<section>
-				<section>
-					<h1>Bonus slides!</h1>
-				</section>
-				<section>
-					<h3>To send data reliably, or not</h3>
-					<h3 class="fragment">
-						Why send unreliable?
-					</h3 class="fragment">
-					<h1 class="fragment">Speed</h1>
-					<aside class="notes" data-markdown>
-						- Sending files and chan ureliable would be catastrofic
-						- sending game starte unreliable cold be benefitical
-						- UDP vs TCP
-					</aside>
-				</section>
-				<section>
-					<h3 class="no-caps">RTCRtpTransceiver.direction</h3>
-					<table>
-						<thead>
-							<tr>
-								<th>State</th>
-								<th>Description</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr class="fragment">
-								<td>"sendrecv"</td>
-								<td>Sending and receiving</td>
-							</tr>
-							<tr class="fragment">
-								<td>"sendonly"</td>
-								<td>Sending</td>
-							</tr>
-							<tr class="fragment">
-								<td>"recvonly"</td>
-								<td>Receiving</td>
-							</tr>
-							<tr class="fragment">
-								<td>"inactive"</td>
-								<td>Nothing/disabled</td>
-							</tr>
-						</tbody>
-					</table>
-
-				</section>
-				<section>
-					<h3>🗡️ Chrome is killing background tabs! 🗡️</h3>
-					<p class="fragment">
-						But WebRTC is (mostly) safe
-					</p>
-					<aside class="notes" data-markdown>
-						- Applications with real-time connections (WebSockets and WebRTC), to avoid closing these connections by timeout.
-						The run-timers-once-a-second rule is still applied in these cases.
-						- Applications playing audio are considered foreground and aren’t throttled. (webRTC with audio)
-					</aside>
-				</section>
 			</section>
 		</div>
 	</div>
